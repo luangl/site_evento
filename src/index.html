@@ -8,24 +8,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-
-
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="">
+            <img class="hero__logo" src="./images/logo.png" alt="">
             <p class="hero__text">
-                O maior evento de tecnologia começa em 10d 12h 20m 15s
+                O aniversário do Luan é em <br><span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul  class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        SHED Curitiba
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        13/04/2023
+                    </li>
+                </ul>
+                <a href="" class="button button--primary">
+                    Garanta seu nome na lista de entrada!
+                </a>
+            </div>
         </div>
-
-
-
     </header>
 
+    <section class="event event--frontend">
+        <div class="container"  data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Local:</h2>
+                <p class="event__details__description">
+                    O local da festa do meu aniversário será na Shed localizada em Curitiba no endereço: , é um lugar extremamente confortável para todos com diversos lugares para você ficar.                
+                </p>
+            </div>
+            <img class="event__image" src="./images/shed.jpg" alt="Fachada Shed">
+        </div>
+    </section>
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Atrações:</h2>
+                <p class="event__details__description">
+                    A festa terá diversas atrações como DJs e muita música para a gente se divertir muito nessa noite. A comida será disponibilizada às 19 horas e 30 minutos (19:30), e sobremesas logo após o cantar do parabéns. O Bolo também será repartido logo após.
+                </p>
+            </div>
+            <img class="event__image" src="./images/atracao.jpg" alt="DJ">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container"  data-aos="fade-right" >
+            <div class="event__details">
+                <h2 class="event__details__title">Horário:</h2>
+                <p class="event__details__description">
+                    A festa de aniversário começará as 19 horas, ou seja a Shed irá abrir esse horário e quem estiver com o nome na lista já poderá entrar!! A festa vai até a madrugada, acabando apenas às 6 horas.
+                </p>
+            </div>
+            <img class="event__image" src="./images/horario.jpg" alt="relógio">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container"  data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Venha comemorar meu aniversário!</h2>
+                <p class="event__details__description">
+                    Vai ser de um prazer enorme ter você comigo comemorando meu aniversário na minha festa, por isso se você puder ir já garante seu nome na lista! e tudo bem se você não puder ir!
+                </p>
+            </div>
+            <img class="event__image" src="./images/venha.jpg" alt="bolo">
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script src="scripts/main.js"></script>
 </body>
