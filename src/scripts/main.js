@@ -22,6 +22,6 @@ const contaAsHoras = setInterval(function(){
 
     if (distanciaAteOEvento < 0) {
         clearInterval(contaAsHoras);
-        document.getElementById ('contador').innerHTML = 'Evento Expirado';
+        document.getElementById ('contador').innerHTML = 'Aniversário Chegou';
     }
 }, 1000);
